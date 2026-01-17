@@ -9441,9 +9441,84 @@ fieldset:disabled .btn {
   font-size: 2.25rem;
 }
 
+.accordion-button {
+  background-color: #add8e6;
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+}
 
 
+/* mobile */
+@media (max-width: 768px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+
+  #inicio .titulo {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  #inicio .fonte-texto {
+    text-align: justify;
+  }
+
+  #inicio .whatsapp-btn {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  #inicio img {
+    max-width: 280px;
+    margin: auto;
+  }
+
+  #sobre .titulo {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  #sobre img {
+    max-width: 280px;
+    margin: auto;
+  }
+
+  #sobre .card {
+    margin-bottom: 10px;
+  }
+
+  footer p {
+    font-size: 0.95rem;
+  }
+
+  footer img {
+    margin-top: 5px;
+  }
+
+  #endereco .titulo {
+    font-size: 1.6rem;
+  }
+
+  #endereco .h5 {
+    font-size: 1rem;
+  }
+
+  
+}
 
 
 

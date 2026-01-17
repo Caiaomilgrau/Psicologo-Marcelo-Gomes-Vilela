@@ -11,90 +11,154 @@
 
 <body class="bg-bege bg-textura">
     
-    <header class="bg-azul-claro w-100 shadow-sm top-0">
-        <nav class="navbar container-sm bg-body-tertiary ">
-            <div class="container-fluid">
-                <div class="d-flex flex-column align-items-center">
-                    <img src="img/psicologia.svg" class="logo" alt="Logo">
-                    <p class="h3">Marcelo Gomes Vilela</p>
+    <header class="bg-azul-claro shadow-sm">
+  <nav class="navbar navbar-expand-md container-sm">
+    <div class="container-fluid">
+
+      <!-- LOGO + NOME -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="img/psicologia.svg" class="logo" alt="Logo">
+        <span class="fw-bold fs-4 ">Marcelo Gomes Vilela</span>
+      </a>
+
+      <!-- BOTÃO HAMBÚRGUER (aparece no mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="menuNavbar">
+        <ul class="navbar-nav mx-auto text-center gap-2 gap-md-4 mt-3 mt-md-0 h4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="duvidas.html">Dúvidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="endereco.html">Endereço e Contato</a>
+          </li>
+        </ul>
+
+        <!-- INSTAGRAM -->
+        <div class="d-flex justify-content-center mt-3 mt-md-0">
+          <a href="https://www.instagram.com/psicologo_marcelo_vilela/">
+            <img src="img/instagram-1.svg" class="redes-sociais" alt="Instagram">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
+<section class="container-sm my-5" id="duvidas">
+
+  <h1 class="titulo text-center mb-4">Dúvidas Frequentes</h1>
+
+  <div class="accordion shadow border rounded-3 bg-bege p-3 p-md-5" id="duvidasAccordion">
+
+    <!-- ITEM 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#duvida1">
+          Quando buscar terapia?
+        </button>
+      </h2>
+      <div id="duvida1" class="accordion-collapse collapse show">
+        <div class="accordion-body fonte-texto">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit...
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#duvida2">
+          Quais os benefícios da terapia?
+        </button>
+      </h2>
+      <div id="duvida2" class="accordion-collapse collapse">
+        <div class="accordion-body fonte-texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#duvida3">
+          A primeira consulta é paga?
+        </button>
+      </h2>
+      <div id="duvida3" class="accordion-collapse collapse">
+        <div class="accordion-body fonte-texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#duvida4">
+          Atende convênio?
+        </button>
+      </h2>
+      <div id="duvida4" class="accordion-collapse collapse">
+        <div class="accordion-body fonte-texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#duvida5">
+          Qual a modalidade das sessões?
+        </button>
+      </h2>
+      <div id="duvida5" class="accordion-collapse collapse">
+        <div class="accordion-body fonte-texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="https://api.whatsapp.com/send/?phone=5511940089170&text=Ola!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."
+     class="whatsapp-btn d-flex justify-content-center mt-4">
+    Agende Sua Consulta
+  </a>
+
+</section>
+
+    <section>
+        <footer class="bg-azul-claro mt-5">
+            <div class="container-sm py-4">
+
+                <div class="row text-center text-md-start align-items-center gy-3">
+
+                    <!-- TEXTO -->
+                    <div class="col-12 col-md-8">
+                        <p class="mb-0">
+                            © 2026 Psicologia Marcelo Gomes Vilela. Todos os direitos reservados.
+                        </p>
+                    </div>
+
+                    <!-- REDES SOCIAIS -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
+                        <a href="https://www.instagram.com/psicologo_marcelo_vilela/">
+                            <img src="img/instagram-1.svg" class="redes-sociais" alt="Instagram">
+                        </a>
+                    </div>
+
                 </div>
-                <ul class="navbar-nav d-flex flex-row justify-content-center gap-3 justify-self-center ">
-                    <li class="nav-item h5  border-start ps-3">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item h5 border-end border-start px-3">
-                        <a class="nav-link" href="duvidas.html">Dúvidas</a>
-                    </li>
-                    <li class="nav-item h5 border-end pe-3">
-                        <a class="nav-link" href="endereco.html">Endereço e Contato</a>
-                    </li>
-                </ul>
-                <a href="https://www.instagram.com/psicologo_marcelo_vilela/"> <img src="img/instagram-1.svg"
-                            class="redes-sociais" alt=""></a>
 
             </div>
-        </nav>
-    </header>
-<section class="container-sm d-flex align-items-center flex-column my-5 min-vh-100" id="duvidas">
-        <h1 class="mb-5">Dúvidas</h1>
-        <div class="d-flex flex-column w-100 align-items-center border rounded-3 p-5 shadow bg-bege">
-            <a class="btn bg-azul-claro w-100 rounded-0 border-bottom" data-bs-toggle="collapse"
-                href="#multiCollapseExample1" role="button" aria-expanded="false"
-                aria-controls="multiCollapseExample1">Quando Buscar Terapia? </a>
-            <div class="collapse multi-collapse w-100" id="multiCollapseExample1">
-                <div class="card card-body rounded-0 fonte-texto mb-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ad fugiat, tenetur magnam nulla
-                    sed nesciunt similique aspernatur consectetur quisquam animi assumenda accusantium sapiente
-                    doloremque minima nam. At, sed soluta.
-                </div>
-            </div>
-            <a class="btn bg-azul-claro w-100 rounded-0 border-bottom" data-bs-toggle="collapse"
-                href="#multiCollapseExample2" role="button" aria-expanded="false"
-                aria-controls="multiCollapseExample2">Quais os Beneficios da Terapia?</a>
-            <div class="collapse multi-collapse w-100" id="multiCollapseExample2">
-                <div class="card card-body rounded-0 fonte-texto mb-2">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid vel tenetur perspiciatis beatae
-                    porro nihil, sequi nisi totam quam quaerat modi deleniti odio. Esse natus libero dolor? Aut, dolore
-                    dolores!
-                </div>
-            </div>
-            <a class="btn bg-azul-claro w-100 rounded-0 border-bottom" data-bs-toggle="collapse"
-                href="#multiCollapseExample3" role="button" aria-expanded="false"
-                aria-controls="multiCollapseExample3">A Primeira Consulta é Paga?</a>
-            <div class="collapse multi-collapse w-100" id="multiCollapseExample3">
-                <div class="card card-body rounded-0 fonte-texto mb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo perspiciatis dignissimos
-                    porro nostrum maiores earum totam quae, officiis voluptatum alias a quibusdam corporis incidunt
-                    dicta, fuga repellendus dolorum ea.
-                </div>
-            </div>
-            <a class="btn bg-azul-claro w-100 rounded-0 border-bottom" data-bs-toggle="collapse"
-                href="#multiCollapseExample4" role="button" aria-expanded="false"
-                aria-controls="multiCollapseExample4">Cobre Convenio?</a>
-            <div class="collapse multi-collapse w-100" id="multiCollapseExample4">
-                <div class="card card-body rounded-0 fonte-texto mb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, porro illum libero a nostrum
-                    pariatur tenetur neque repellat obcaecati velit, eveniet praesentium. Totam pariatur eaque tempora
-                    eum debitis recusandae ut!
-                </div>
-            </div>
-            <a class="btn bg-azul-claro w-100 rounded-0 border-bottom" data-bs-toggle="collapse"
-                href="#multiCollapseExample5" role="button" aria-expanded="false"
-                aria-controls="multiCollapseExample5">Qual a Modalidade das Sessões?</a>
-            <div class="collapse multi-collapse w-100" id="multiCollapseExample5">
-                <div class="card card-body rounded-0 fonte-texto mb-2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, sit id dolores cupiditate
-                    voluptatem doloribus aliquam placeat optio odit dolor. Laboriosam quia eaque pariatur cumque
-                    praesentium id fuga, iure dolorum.
-                </div>
-            </div>
-            <a href="https://api.whatsapp.com/send/?phone=5511940089170&text=Ola!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."
-                    class="whatsapp-btn d-flex justify-content-center mt-5 w-100">Agende Sua Consulta</a>
-        </div>
-    </section>
-    <section>
-        <footer class="bg-azul-claro d-flex flex-column align-items-center justify-content-center p-3">
-            <p class="mb-0">© 2026 Psicologia Marcelo Gomes Vilela. Todos os direitos reservados.</p>
         </footer>
     </section>
 </body>
