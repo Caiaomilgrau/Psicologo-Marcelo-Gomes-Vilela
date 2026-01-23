@@ -2,62 +2,63 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.bundle.js"></script>
-    <title>Psicologia Marcelo Gomes Vilela</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <title>Psicologia Marcelo Gomes Vilela</title>
 </head>
 
 <body class="bg-bege bg-textura">
+  <header class="bg-azul-claro shadow-sm">
+    <nav class="navbar navbar-expand-md container-sm">
+      <div class="container-fluid">
 
-    <header class="bg-azul-claro shadow-sm">
-        <nav class="navbar navbar-expand-md container-sm">
-            <div class="container-fluid">
 
-                <!-- LOGO + NOME -->
-                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                    <img src="img/psicologia.svg" class="logo" alt="Logo">
-                    <span class="fw-bold fs-4 ">Marcelo Vilela</span>
-                </a>
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="img/logo-imagem.png" class="logo" alt="Logo">
+          <span class="fw-bold fs-4 texto-bege texto-logo ">Marcelo Vilela</span>
+        </a>
 
-                <!-- BOTÃO HAMBÚRGUER (aparece no mobile) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <!-- MENU -->
-                <div class="collapse navbar-collapse" id="menuNavbar">
-                    <ul class="navbar-nav mx-auto text-center gap-2 gap-md-4 mt-3 mt-md-0 h4">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="duvidas.html">Dúvidas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="endereco.html">Endereço e Contato</a>
-                        </li>
-                    </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <!-- INSTAGRAM -->
-                    <div class="d-flex justify-content-center mt-3 mt-md-0">
-                        <a href="https://www.instagram.com/psicologo_marcelo_vilela/">
-                            <img src="img/instagram-1.svg" class="redes-sociais" alt="Instagram">
-                        </a>
-                    </div>
-                </div>
 
-            </div>
-        </nav>
-    </header>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav mx-auto text-center gap-2 gap-md-4 mt-3 mt-md-0 h4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="duvidas.html">Dúvidas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="endereco.html">Endereço e Contato</a>
+            </li>
+          </ul>
+
+
+          <div class="d-flex justify-content-center mt-3 mt-md-0 gap-1">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511940089170&text=Ola!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.">
+              <img src="img/whatsapp.svg" class="redes-sociais" alt="Whatsapp">
+            </a>
+            <a href="https://www.instagram.com/psicologo_marcelo_vilela/">
+              <img src="img/instagram-1.svg" class="redes-sociais" alt="Instagram">
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
   <section class="container-sm my-5 min-vh-100" id="duvidas">
-
-    <h1 class="titulo text-center mb-4">Dúvidas Frequentes</h1>
-
     <div class="accordion shadow border rounded-3 bg-bege p-3 p-md-5" id="duvidasAccordion">
-
-      <!-- ITEM 1 -->
+      <h1 class="titulo text-center mb-4">Dúvidas Frequentes</h1>
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#duvida1">
@@ -94,8 +95,6 @@
           </div>
         </div>
       </div>
-
-      <!-- ITEM 2 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#duvida2">
@@ -111,8 +110,6 @@
             disfuncionais e no desenvolvimento de estratégias para uma vida mais equilibrada e satisfatória. </div>
         </div>
       </div>
-
-      <!-- ITEM 5 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#duvida3">
@@ -145,14 +142,11 @@
             reflexão e transformação. </div>
         </div>
       </div>
-
+      <a href="https://api.whatsapp.com/send/?phone=5511940089170&text=Ola!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."
+        class="whatsapp-btn d-flex justify-content-center mt-4">
+        Agende Sua Consulta
+      </a>
     </div>
-
-    <a href="https://api.whatsapp.com/send/?phone=5511940089170&text=Ola!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."
-      class="whatsapp-btn d-flex justify-content-center mt-4">
-      Agende Sua Consulta
-    </a>
-
   </section>
 
   <section>
@@ -161,22 +155,22 @@
 
         <div class="row text-center text-md-start align-items-center gy-3">
 
-          <!-- TEXTO -->
+          
           <div class="col-12 col-md-8">
             <p class="mb-0">
               © 2026 Psicólogo Marcelo Vilela. Todos os direitos reservados.
             </p>
           </div>
-
-          <!-- REDES SOCIAIS -->
-          <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
+          <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end gap-1">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511940089170&text=Ola!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.">
+              <img src="img/whatsapp.svg" class="redes-sociais" alt="Whatsapp">
+            </a>
             <a href="https://www.instagram.com/psicologo_marcelo_vilela/">
               <img src="img/instagram-1.svg" class="redes-sociais" alt="Instagram">
             </a>
           </div>
-
         </div>
-
       </div>
     </footer>
   </section>

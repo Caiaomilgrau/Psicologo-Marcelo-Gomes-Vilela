@@ -9364,12 +9364,27 @@ fieldset:disabled .btn {
 
 /*meus itens*/
 
+
+.align-items-between {
+  align-items: space-between !important;
+}
+
 .bg-azul-claro {
     background-color: #add8e6 !important;
   }
 
+.texto-bege {
+  color: #ac750f !important;
+}
+
+.texto-logo{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .logo {
-  width: 80px;
+  width: 120px;
   height: auto;
 }
 
@@ -9382,13 +9397,20 @@ fieldset:disabled .btn {
   background-color: #f5f5dc !important;
 }
 
+.bg-bege-escuro {
+  background-color: #dbd2a4 !important;
+}
+
+
+
 .bg-textura {
   background-image: url("https://www.transparenttextures.com/patterns/gray-floral.png");
 }
 
 .imagem-conteudo {
   width: 100%;
-  height: auto;
+  height: 100%;
+  
 }
 
 .fonte-texto {
@@ -9441,6 +9463,7 @@ fieldset:disabled .btn {
   font-size: 2.25rem;
 }
 
+
 .accordion-button {
   background-color: #add8e6;
   font-weight: 500;
@@ -9450,6 +9473,18 @@ fieldset:disabled .btn {
   color: #000;
 }
 
+.skew{
+  transform: skew(-4deg, -4deg);
+
+}
+
+.skew-inverse{
+  transform: skew(4deg, 4deg);
+}
+
+.skew-0{
+  transform: skew(0deg);
+}
 
 /* mobile */
 @media (max-width: 768px) {
