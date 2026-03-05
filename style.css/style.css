@@ -12,6 +12,10 @@
     --fifth-color-rgba: rgba(187, 225, 255, 0.8);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--tertiary-color);
 }
@@ -68,8 +72,8 @@ body {
 
 
 .custom-nav {
-    --bs-navbar-toggler-border-color: var(--primary-color-rgba);
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(242, 127, 27, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    --bs-navbar-toggler-border-color: var(--secondary-color-rgba);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(0, 27, 87, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
     --bs-navbar-toggler-border-radius: 5rem;
     --bs-border-width: 2px;
     background-color: var(--primary-color-rgba);
@@ -99,15 +103,30 @@ body {
 /* Hero */
 
 .hero {
-    padding-top: 100px;
+    padding-top: 100px !important;
     background: linear-gradient(var(--primary-color) 0%, var(--fifth-color) 100%);
     min-height: 100vh;
+}
+
+.hero p{
+    max-width: 80%;
 }
 
 .hero h1 {
     color: var(--secondary-color);
 }
 
+.hero-img{
+    /* background-image: url("../imgs/fundo-img.svg"); */
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 1rem;
+}
 
 /* Servicos */
 
@@ -133,37 +152,62 @@ body {
     background: var(--tertiary-color);
 }
 
+.sobre-img{
+    background-color: var(--fourth-color);
+    border-radius: 1rem ;
+    
+}
+
 /* Consultório */
 .consultorio {
     background-color: var(--fourth-color);
 }
 
 .consultorio-img {
-    height: 480px;
+    max-height: 480px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
 }
 
 .consultorio-carousel .carousel-indicators [data-bs-target] {
     background-color: var(--secondary-color);
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     border: none;
-    opacity: 0.4;
+    opacity: 0.35;
+    transition: opacity 0.2s ease;
 }
 
 .consultorio-carousel .carousel-indicators .active {
     opacity: 1;
 }
 
-.consultorio-carousel .carousel-control-prev-icon,
-.consultorio-carousel .carousel-control-next-icon {
-    filter: invert(1);
-    background-color: black;
+/* Botões de navegação externos ao carousel */
+.consultorio-nav-btn {
+    background-color: var(--secondary-color);
+    border: none;
     border-radius: 50%;
-    padding: 1.2rem;
-    background-size: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.consultorio-nav-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.08);
+}
+
+.consultorio-slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* Contato */
@@ -195,15 +239,10 @@ body {
     color: var(--secondary-color);
 }
 
-.footer-brand:hover {
-    opacity: 0.7;
-}
-
 .footer-tagline {
     font-size: 0.9rem;
     color: var(--secondary-color) !important;
     margin-top: 0.25rem;
-    opacity: 0.75;
 }
 
 .footer-heading {
@@ -237,5 +276,80 @@ body {
 .footer-copy {
     color: var(--secondary-color);
     font-size: 0.85rem;
-    opacity: 0.6;
+}
+
+/* Botão flutuante WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 1.75rem;
+    right: 1.75rem;
+    z-index: 9999;
+    background-color: #25D366;
+    color: #fff;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: wpp-pulse 2.5s infinite;
+}
+
+.whatsapp-float svg {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 22px rgba(37, 211, 102, 0.6);
+    animation: none;
+}
+
+@keyframes wpp-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero p{
+        max-width: 100%;
+    }
+
+    .consultorio-nav-btn {
+        display: none;
+    }
+
+    .card-icon {
+        margin-inline: auto;
+    }
+
+    .consultorio-img {
+        height: auto;
+        max-height: 480px;
+        aspect-ratio: 4 / 3;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem !important;
+    }
 }
