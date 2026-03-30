@@ -204,7 +204,6 @@ p {
 
 /* Prevent the blob from causing horizontal scroll */
 .hero .col-md-6:last-child {
-    overflow: clip;
     padding-bottom: 1.5rem;
     padding-top: 0.5rem;
 }
@@ -242,7 +241,6 @@ p {
 .hero-img {
     position: relative;
     z-index: 1;
-    background-color: var(--fifth-color);
     background-size: cover;
     background-position: center;
     border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
@@ -251,7 +249,7 @@ p {
     object-position: top center;
     margin-top: 1rem;
     animation: blob-morph 8s ease-in-out infinite;
-    box-shadow: var(--shadow-soft);
+    /* box-shadow: var(--shadow-soft); */
 }
 
 /* ── Services ─────────────────────────────────────────── */
@@ -557,6 +555,6 @@ p {
 @media (max-width: 576px) {
     .logo { width: 5rem; }
     .navbar-brand { font-size: 1.25rem !important; }
-    .hero-img-wrapper::before,
-    .hero-img-wrapper::after { inset: -10px; }
+    /* .hero-img-wrapper::before,
+    .hero-img-wrapper::after { inset: -10px; } */
 }
